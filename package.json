@@ -1,5 +1,6 @@
 {
   "name": "azure-iot-mqtt-client",
+  "description": "This is an MQTT client library to publish messages as a device to Azure IoT Hub from ClearBlade platform",
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
