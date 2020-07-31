@@ -1,0 +1,9 @@
+{
+    "auth": true,
+    "description": "",
+    "messaging_url": "platform.clearblade.com:1883",
+    "name": "azure-device-mqtt-client",
+    "platform_url": "https://platform.clearblade.com",
+    "system_key": "f8f5faf10bd281c4f7d7c3be8202",
+    "system_secret": "F8F5FAF10B94C7C3B099E2A49255"
+}
