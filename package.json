@@ -1,7 +1,6 @@
 {
-  "name": "azure-poc",
+  "name": "azure-iot-mqtt-client",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "jest",
     "build:all": "webpack --config cb-dev-kit/webpack.config.js --config-name all",
@@ -107,5 +106,43 @@
     "three": "^0.110.0",
     "typeface-roboto": "0.0.75",
     "uuid": "^3.4.0"
-  }
+  },
+  "main": "code/services/mqttDeviceClient",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashjain28/azure-iot-mqtt-client.git"
+  },
+  "asset_types": [
+    "Code Libraries",
+    "Code Services"
+  ],
+  "keywords": [
+    "mqtt",
+    "client",
+    "publish",
+    "device",
+    "azure",
+    "iot",
+    "hub",
+    "cloud",
+    "sastoken"
+  ],
+  "prog_lang": [
+    "Javascript"
+  ],
+  "clouds": [],
+  "things": [],
+  "domains": [],
+  "protocols": [
+    "mqtt"
+  ],
+  "gateways": [],
+  "author": "Yash Jain <community@clearblade.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashjain28/azure-iot-mqtt-client/issues"
+  },
+  "homepage": "https://github.com/yashjain28/azure-iot-mqtt-client#readme",
+  "image_url": "https://raw.githubusercontent.com/yashjain28/azure-iot-mqtt-client/master/banner.png",
+  "private": false
 }
