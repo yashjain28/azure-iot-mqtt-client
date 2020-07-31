@@ -1,0 +1,7 @@
+{
+    "api": "",
+    "dependencies": "",
+    "description": "This library is used to generate a sas token for Azure's MQTT credentials",
+    "name": "SasTokenGeneratorLib",
+    "visibility": "system"
+}
