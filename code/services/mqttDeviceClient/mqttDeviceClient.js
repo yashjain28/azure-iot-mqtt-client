@@ -32,7 +32,7 @@ function mqttDeviceClient(req, resp) {
     deviceID: "myDevice",
   };
   const stringifiedData =
-    typeof deviceData !== string ? JSON.stringify(deviceData) : deviceData;
+    typeof deviceData !== "string" ? JSON.stringify(deviceData) : deviceData;
   const info = "Data on device: " + stringifiedData;
   const client = new MQTT.Client(options);
   client.publish(AzureConfiguration.PUBLISH_TOPIC, info).then(
