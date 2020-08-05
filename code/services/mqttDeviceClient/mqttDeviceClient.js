@@ -15,11 +15,11 @@
 function mqttDeviceClient(req, resp) {
   // These are parameters passed into the code service
 
-  constants params = req.params;
-  constants endpoint = AzureConfiguration.ENDPOINT;
-  constants deviceKey = AzureConfiguration.DEVICE_KEY;
-  constants token = generateSasToken(endpoint, deviceKey, null, 60);
-  constants options = {
+  const params = req.params;
+  const endpoint = AzureConfiguration.ENDPOINT;
+  const deviceKey = AzureConfiguration.DEVICE_KEY;
+  const token = generateSasToken(endpoint, deviceKey, null, 60);
+  const options = {
     address: AzureConfiguration.ADDRESS,
     port: 8883,
     client_id: AzureConfiguration.CLIENT_ID,
@@ -31,9 +31,10 @@ function mqttDeviceClient(req, resp) {
     data: 91,
     deviceID: "myDevice",
   };
-  const stringifiedData = (typeof deviceData !== string)? JSON.stringify(deviceData):deviceData; 
-  var info = "Data on device: " + stringifiedData;
-  var client = new MQTT.Client(options);
+  const stringifiedData =
+    typeof deviceData !== string ? JSON.stringify(deviceData) : deviceData;
+  const info = "Data on device: " + stringifiedData;
+  const client = new MQTT.Client(options);
   client.publish(AzureConfiguration.PUBLISH_TOPIC, info).then(
     function (resolve) {
       log(resolve);
